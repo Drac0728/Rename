@@ -1,8 +1,8 @@
 import os
 
 os.chdir('path')
-for fiel in os.listdir():
-	file_name, file_ext = os.path.splitext(fiel)
+for file_list in os.listdir():
+	file_name, file_ext = os.path.splitext(file_list)
 	try:
 		file_title, file_num = file_name.split(' ')
 	except Exception:
